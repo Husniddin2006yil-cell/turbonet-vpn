@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TurboNet VPN</title>
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0f1a;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    color: #00e5ff;
+}
+
+.card {
+    background: #12182b;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+button {
+    background: linear-gradient(45deg,#00e5ff,#7a5cff);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚀 TurboNet VPN</h1>
+<p>Быстрый и безопасный интернет без ограничений</p>
+
+<div class="card">
+<h3>🥉 1 месяц — 75 ₽</h3>
+<button onclick="buy('1 месяц')">Подключить</button>
+</div>
+
+<div class="card">
+<h3>🥈 3 месяца — 200 ₽</h3>
+<button onclick="buy('3 месяца')">Подключить</button>
+</div>
+
+<div class="card">
+<h3>🥇 6 месяцев — 350 ₽</h3>
+<button onclick="buy('6 месяцев')">Подключить</button>
+</div>
+
+<p>⚡ Высокая скорость • 🔒 Конфиденциальность • 📱 Все устройства</p>
+
+</div>
+
+<script>
+function buy(tariff) {
+    Telegram.WebApp.showAlert("Вы выбрали тариф: " + tariff + ". После оплаты вы получите ключ.");
+}
+</script>
+
+</body>
+</html>
